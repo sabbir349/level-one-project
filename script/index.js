@@ -1,5 +1,3 @@
-
-
 // content section
 
 const loadContentData=()=>{
@@ -14,7 +12,7 @@ const showContentData=(values)=>{
         const {category,title,author,description,image,isActive,comment_count,view_count,posted_time} = value
         const div = document.createElement('div')
         div.innerHTML=`
-        <div class="bg-base-100 rounded-2xl flex gap-8 p-3">
+        <div class=" bg-base-100 rounded-2xl flex gap-8 p-3">
         <div class="h-[80px] w-[120px] rounded-full">
          ${isActive === true ?
         '<div class="h-2 w-2 bg-green-600 rounded-full"></div>' :
@@ -49,7 +47,7 @@ const add=(clicked)=>{
     const counted = document.getElementById('counted')
     const div = document.createElement('div')
     div.innerHTML=`
-   <div class="flex justify-around h-10 items-center bg-white rounded-lg mb-5 mt-10">
+   <div class="flex justify-around p-1 bg-white rounded-lg mb-5 mt-10">
    <h1>${title}</h1>
    <h1>${view_count}</h1>
    </div>
